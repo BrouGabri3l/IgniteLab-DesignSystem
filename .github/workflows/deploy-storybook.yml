@@ -22,7 +22,7 @@ jobs:
         run: yarn install --frozenlockfile --force
 
       - name: build storybook
-        run: build storybook
+        run: yarn build-storybook
 
       - name: Deploy Storybook
         run: yarn deploy-storybook --ci --exitsting-output-dir="storybook-static"
